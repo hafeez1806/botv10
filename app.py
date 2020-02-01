@@ -41,8 +41,6 @@ def is_user_message(message):
 
 
 def send_message(recipient_id, text):
- with open("data.json", "r") as jsonFile: #open file
-  data = json.load(jsonFile)
  if text == "help":
   payload = {
         'message': {
