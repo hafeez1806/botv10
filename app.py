@@ -43,7 +43,19 @@ def is_user_message(message):
 def send_message(recipient_id, text):
     payload = {
         'message': {
-            'text': text
+            "text": "Pick a color:",
+            "quick_replies":[
+              {
+               "content_type":"text",
+               "title":"Red",
+               "payload":"<POSTBACK_PAYLOAD>",
+               "image_url":"http://example.com/img/red.png"
+              },{
+               "content_type":"text",
+               "title":"Green",
+               "payload":"<POSTBACK_PAYLOAD>",
+              "image_url":"http://example.com/img/green.png"
+              }
         },
         'recipient': {
             'id': recipient_id
