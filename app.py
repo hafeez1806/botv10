@@ -79,7 +79,7 @@ def send_message(recipient_id, text):
   
  auth = { 'access_token': PAGE_ACCESS_TOKEN }
 
-    response = requests.post(
+ response = requests.post(
         FB_API_URL,
         params=auth,
         json=payload
