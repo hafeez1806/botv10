@@ -15,7 +15,7 @@ def get_bot_response(message):
  with open("data.json", "r") as jsonFile: #open file
   data = json.load(jsonFile)
  if input in data:
-  ret = data[input]
+  return(data[input])
  else:
   return("sorry i cant repy to that yet") 
    
