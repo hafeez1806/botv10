@@ -52,12 +52,12 @@ def send_message(recipient_id, text):
                "content_type":"text",
                "title":"todays weather",
                "payload":"<POSTBACK_PAYLOAD>",
-               "image_url":""
+               "image_url":"http://example.com/img/red.png"
 	      },{
                "content_type":"text",
                "title":"megablock",
                "payload":"<POSTBACK_PAYLOAD>",
-              "image_url":""
+              "image_url":"http://example.com/img/green.png"
 	      }
 	    ]
         },
@@ -65,7 +65,7 @@ def send_message(recipient_id, text):
             'id': recipient_id
         },
         'notification_type': 'regular'
-    }
+        }
  else:
   payload = {
         'message': {
