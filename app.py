@@ -1,6 +1,8 @@
 from flask import Flask, request, render_template
 import requests
 import json
+import os
+
 app = Flask(__name__)
 
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages?EAALDLMirOvEBAMzAb6YZCMs1erTgaZA3yl3j9mwZBp0QfNhKs83baRBjh3nnY9zUieykGFPStSa2i4x2eblRkunazDkId07hHSvztldrqGBcb6tKGMZAwEKVnUrnD3nKz1RVkKzhsfttLhF0iC0x13zAZAdkTsC1mZBLaBdUs9FUoGdh4Fegtv'
