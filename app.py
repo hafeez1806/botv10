@@ -56,6 +56,7 @@ def send_message(recipient_id, text):
                "payload":"<POSTBACK_PAYLOAD>",
               "image_url":"http://example.com/img/green.png"
               }
+	    ]
         },
         'recipient': {
             'id': recipient_id
