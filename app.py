@@ -14,7 +14,7 @@ def get_bot_response(message):
  input = message
  with open("data.json", "r") as jsonFile: #open file
   data = json.load(jsonFile)
- if data[input] is []:
+ if data[input] == []:
   ret = "Sorry i am unable to answer that question right now!"  
  else:
   ret = data[input]  
