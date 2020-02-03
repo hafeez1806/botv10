@@ -54,8 +54,7 @@ def send_message(recipient_id, text):
 	      },{
                "content_type":"text",
                "title":"megablock",
-               "payload":"<POSTBACK_PAYLOAD>",
-              "image_url":""
+              "url":""
 	      }
 	    ]
         },
