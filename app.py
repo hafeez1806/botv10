@@ -44,6 +44,7 @@ def send_message(recipient_id, text):
  if "help" in text:
   payload = {
         'message': {
+		"text": "How can i help you?",
             "quick_replies":[
               {
                "content_type":"text",
