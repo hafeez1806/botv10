@@ -54,10 +54,14 @@ def send_message(recipient_id, text):
             "type":"web_url",
             "url":"https://www.messenger.com",
             "title":"Visit Messenger"
-          }
+          },
+		{
+		"type":"web_url",
+            "url":"https://www.messenger.com",
+            "title":"Visit Messenger"
+		}
 	]
       }
-    }
 	 }
         'recipient': {
             'id': recipient_id
