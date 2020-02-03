@@ -41,7 +41,7 @@ def is_user_message(message):
 
 
 def send_message(recipient_id, text):
- if text == "help":
+ if "help" in text:
   payload = {
         'message': {
             "text": "How can i help you?",
@@ -50,12 +50,12 @@ def send_message(recipient_id, text):
                "content_type":"text",
                "title":"todays weather",
                "payload":"<POSTBACK_PAYLOAD>",
-               "image_url":"http://example.com/img/red.png"
+               "image_url":""
 	      },{
                "content_type":"text",
                "title":"megablock",
                "payload":"<POSTBACK_PAYLOAD>",
-              "image_url":"http://example.com/img/green.png"
+              "image_url":""
 	      }
 	    ]
         },
