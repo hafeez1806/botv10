@@ -43,21 +43,21 @@ def is_user_message(message):
 def send_message(recipient_id, text):
  if "help" in text:
   payload = {
-        'message': {
-		"text": "How can i help you?",
-            "buttons":[
-              {
-               "content_type":"text",
-               "title":"todays weather",
-               "payload":"<POSTBACK_PAYLOAD>",
-               "image_url":""
-	      },{
-               "content_type":"text",
-               "title":"megablock",
-              "url":""
-	      }
-	    ]
-        },
+         "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"What do you want to do next?",
+        "buttons":[
+          {
+            "type":"web_url",
+            "url":"https://www.messenger.com",
+            "title":"Visit Messenger"
+          }
+	]
+      }
+    }
         'recipient': {
             'id': recipient_id
         },
