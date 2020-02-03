@@ -62,7 +62,7 @@ def send_message(recipient_id, text):
 		}
 	]
       }
-	 }
+	 },
         'recipient': {
             'id': recipient_id
         },
