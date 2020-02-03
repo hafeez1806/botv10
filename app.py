@@ -45,7 +45,7 @@ def send_message(recipient_id, text):
   payload = {
         'message': {
 		"text": "How can i help you?",
-            "quick_replies":[
+            "buttons":[
               {
                "content_type":"text",
                "title":"todays weather",
