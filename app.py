@@ -44,22 +44,22 @@ def send_message(recipient_id, text):
  if "help" in text:
   payload = {
 	  "messaging_type": "RESPONSE",
-         'message': {
-		"text": "How can i help you?",
-            "buttons":[
-              {
-               "content_type":"text",
-               "title":"todays weather",      
-               "payload":"<POSTBACK_PAYLOAD>",
-               "image_url":""
-	      },{
-               "content_type":"text",
-               "title":"megablock",
-	       "payload":"<POSTBACK_PAYLOAD>",	      
-              "image_url":""
-	      }
-	    ]
-        },
+         "message":{
+    "text": "Pick a color:",
+    "quick_replies":[
+      {
+        "content_type":"text",
+        "title":"todays weather",
+        "payload":"<POSTBACK_PAYLOAD>",
+        "image_url":"http://example.com/img/red.png"
+      },{
+        "content_type":"text",
+        "title":"megablock",
+        "payload":"<POSTBACK_PAYLOAD>",
+        "image_url":"http://example.com/img/green.png"
+      }
+    ]
+  },
         'recipient': {
             'id': recipient_id
         },
