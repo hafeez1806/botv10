@@ -43,8 +43,8 @@ def is_user_message(message):
 def send_message(recipient_id, text):
  if "help" in text:
   payload = {
+	  "messaging_type": "RESPONSE",
          'message': {
-		 "messaging_type": "RESPONSE",
 		"text": "How can i help you?",
             "buttons":[
               {
