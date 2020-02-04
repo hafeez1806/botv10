@@ -49,12 +49,13 @@ def send_message(recipient_id, text):
             "buttons":[
               {
                "content_type":"text",
-               "title":"todays weather",
+               "title":"todays weather",      
                "payload":"<POSTBACK_PAYLOAD>",
                "image_url":""
 	      },{
                "content_type":"text",
                "title":"megablock",
+	       "payload":"<POSTBACK_PAYLOAD>",	      
               "image_url":""
 	      }
 	    ]
